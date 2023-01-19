@@ -55,7 +55,8 @@ color: #fff;
     border: 1px solid #76dbc1
   }
   .container{
-    text-align: left;
+    width:50%;
+    margin-left:25%;
   }
   .btn{
     border: 1px solid rgba(255,255,255,0.25);
