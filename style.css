@@ -91,7 +91,10 @@ color: #fff;
   }
   .card{
     background-color: #0b121a;
-    
+    width:45%;
+     margin-left:25%;
+      padding:5%;
+      border: 1px solid white;
   }
 
     .card-title{
