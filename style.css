@@ -133,11 +133,15 @@ textarea{
     font-size: 1em;
 }
 
+.container{
+    margin-top:1%;
+}
+
 .textarea:focus{
     border: 2px solid #76dbc1
 }
 
-select{
+.select{
     position: relative;
     width: 250px;
     background-color: #0b121a;
