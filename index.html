@@ -1,87 +1,150 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Survey</title>
-  </head>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <body>
-      
-	<h1 class="jumbotron text-center" >Survey</h1>
-	<form id="myform" action="index.php" >
-	<br>
-	<br>
-	<! Choose a website to evaluate >
+	<!-- Conventional CSS StyleSheet -->
+	<link rel="stylesheet" href="style.css">
 
-		<div class="container">
-	<h3><i>This is a terribly ugly page... please modify it!</i></h3>
-	<h2>What do you think of the UI in this <a href="http://Provigo.ca">Provigo</a> site?</h2>	
-	<br>
-	<br>
-	<! You should make your image clickable>
-	<img src="images/Provigo-FrontPage.JPG" alt="http://Provigo.ca" width="450" height="300">
-	<br>
-	<br>
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 
-    <div class="card">
-        <div class="card-header">
-          Survey.com
-        </div>
-        <div class="card-body">
-
-          <h5 class="card-title">Apple UI Survey</h5>
-
-          <h6 class="card-title">Personal Information</h6>
-			<p class="card-text" style="margin-left: 20px">First name: <input type="text" name="firstname"></p>
-			<p class="card-text" style="margin-left: 20px">Last name: <input type="text" name="firstname"></p>
-          
-		  <h6 class="card-title">What do you like?</h6>
-			<p style="margin-left: 20px">I like:<br>
-				<input type="checkbox" name="Color" value="Red" style="margin-left: 20px">Red<br>
-				<input type="checkbox" name="Color" value="Green" style="margin-left: 20px">Green<br>
-				<input type="checkbox" name="Color" value="Blue" style="margin-left: 20px">Blue<br>
-				</p>
-
-		  <h6 class="card-title">What is your favorite fruit?</h6>
-		  <p style="margin-left: 20px"> 
-			<select id="favorite">
-				<option value="Apples" selected="selected">Apples</option>
-				<option value="Oranges">Oranges</option>
-				<option value="Bananas">Bananas</option>
-			</select>
-			</p>
-
-          <a href="#" class="btn btn-primary">Submit</a>
-        </div>
-      </div>
-	
-	<br>
-		
-	Comments:<br>
-	<textarea rows="5" cols="30"></textarea>
+	<title>Website Design Feedback Survey</title>
+</head>
 			
-	<br>
-	<br>
-			
-	<button id="submitButton" type="button" class="block">
-		SUBMIT your questionnaire
-	</button>
-		
-	<p id="signature">Site created by Caroline Barrière</p>	
-	
+<body>
+
+	<h1 class="jumbotron text-center">Website Design Feedback Survey</h1>
+	<form id="myform" action="index.php">
+		<br>
+		<br>
+		<! Choose a website to evaluate>
+
+			<div class="container">
+				<h2>What do you think of the UI of the <a href="http://apple.com" target="_blank">Apple</a> website?</h2>
+				<br>
+
+				<h3>Website preview gallery:</h3>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="images/1.png" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="images/2.png" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="images/3.png" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="images/4.png" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+
+				<br>
+				<br>
+
+				<div class="card">
+				
+					<div class="card-body">
+
+						<h5 class="card-title">Apple UI Survey</h5>
+                        
+                        <br>
+
+						<h6 class="card-title">Personal Information</h6>
+						
+                        <br>
+
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>First Name</span>
+                        </div>
+
+                        <br>
+
+                        <div class="inputBox">
+                            <input type="text" required="required">
+                            <span>Last Name</span>
+                        </div>
+                        
+                        <br>
+
+						<h6 class="card-title">What do you like?</h6>
+                        
+                        <br>
+
+						<p>
+							<input type="checkbox" name="Color" value="Red">Red<br>
+							<input type="checkbox" name="Color" value="Green">Green<br>
+							<input type="checkbox" name="Color" value="Blue">Blue<br>
+						</p>
+                        
+                        <br>
+
+						<h6 class="card-title">What is your favorite fruit?</h6>
+						<p>
+							<select id="favorite">
+								<option value="Apples" selected="selected">Apples</option>
+								<option value="Oranges">Oranges</option>
+								<option value="Bananas">Bananas</option>
+							</select>
+						</p>
+					</div>
+				</div>
+
+				<br>
+
+				<h6 style="margin-left: 20px">Comments</h6><br>
+				<textarea rows="5" cols="30" style="margin-left: 20px"></textarea>
+
+				<br>
+				<br>
+
+				<a href="#" class="btn" style="margin-left: 20px">Submit Form</a>
+
+				<br>
+				<br>
+                <br>
+                <br>
+                <br>
+                
+				<h4 id="signature" style="margin-left: 20px" >Site created by Steven Wilson, Jacob Maurice, Deniz Jasarbasic and Cameron Cooke.</h4>
+				<br>
+
 	</form>
-</div>
+	</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>
