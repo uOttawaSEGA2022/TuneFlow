@@ -55,8 +55,7 @@ color: #fff;
     border: 1px solid #76dbc1
   }
   .container{
-    width:50%;
-    margin-left:25%;
+    
   }
   .btn{
     border: 1px solid rgba(255,255,255,0.25);
@@ -92,7 +91,7 @@ color: #fff;
   }
   .card{
     background-color: #0b121a;
-    border: 1px solid white;
+    
   }
 
     .card-title{
