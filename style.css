@@ -97,10 +97,12 @@ color: #fff;
   background-color: #0b121a;
   color: #fff;
   border-radius: 0%;
+  font-size: 45pt;
 }
 
 h2 {
   font-weight: 300;
+  font-size: 25pt;
 }
 
 h3 {
@@ -125,6 +127,7 @@ h6 {
 }
 
 textarea{
+  width: 100%;
   background-color: #0b121a;
   border: 1px solid rgba(255,255,255,0.25);
   border-radius: 5px;
@@ -163,10 +166,6 @@ select{
 
 }
 
-nav{
-  grid-area: nav;
-}
-
 main{
   grid-area: main;
 }
@@ -189,8 +188,4 @@ main{
 
 #content4{
   grid-area: content4;
-}
-
-@media only screen and (max-width:550px){
-
 }
