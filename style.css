@@ -157,16 +157,18 @@ select{
   display:grid;
   height:100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: 2fr 2fr 2fr;
   grid-template-areas:
   "sidebar main main main"
   "sidebar main main main"
-  "content1 content2 content3 content4";
-  grid-gap: 0.2rem;
+  "content1 main main main"
+  "content2 content3 content4 content5";
+  grid-gap: 1.5rem;
 
 }
 
 main{
+  background-color: #76dbc1;
   grid-area: main;
 }
 
