@@ -1,18 +1,22 @@
-head{
-  background-color: #0b121a;
-}   
 body {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-background-color: #0b121a;
+background-image: linear-gradient(to bottom right, #0b121a, #0c1319);
 display: flex;
-justify-content: center;
-align-items: center;
 min-height: 100vh;
 flex-direction: column;
 gap: 30px;
 color: #fff;
+}
+.h{
+  width: 80%;
+  height: 0.1px;
+  border: 0 none;
+  background-color: rgba(255,255,255,0.25);
+  margin-right: auto;
+  margin-left: auto;
+
 }
 .inputBox{
   position: relative;
@@ -54,9 +58,7 @@ color: #fff;
 .inputBox input:focus{
   border: 1px solid #76dbc1
 }
-.container{
-  
-}
+
 .btn{
   border: 1px solid rgba(255,255,255,0.25);
   border-radius: 30px;
@@ -90,19 +92,22 @@ color: #fff;
   height: 180%;
 }
 .card{
-  background-color: #0b121a;
+  background-color: #0b121a00;
 }
 
 .jumbotron {
-  background-color: #0b121a;
+  text-align: left;
+  background-color: #0b121a00;
   color: #fff;
   border-radius: 0%;
-  font-size: 45pt;
+  font-size: 60pt;
+  font-weight: 650
 }
 
 h2 {
+  text-align: left;
   font-weight: 300;
-  font-size: 25pt;
+  font-size: 30pt;
 }
 
 h3 {
@@ -127,9 +132,9 @@ h6 {
 }
 
 textarea{
-  width: 100%;
+  width: 70%;
   padding: 1%;
-  background-color: #0b121a;
+  background-color: #0b121a00;
   border: 1px solid rgba(255,255,255,0.25);
   border-radius: 20px;
   color: #fff;
@@ -156,7 +161,7 @@ select{
 
 .container{
   display:grid;
-  height:120vh;
+  height: 120vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr;
   grid-template-areas:
@@ -191,3 +196,4 @@ main{
 #content4{
   grid-area: content4;
 }
+
