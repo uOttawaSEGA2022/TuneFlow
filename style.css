@@ -163,14 +163,12 @@ select{
   "sidebar main main main"
   "sidebar main main main"
   "content1 main main main"
-  "content2 main main main"
-  "content3 content4 content5 content6";
+  "content2 content3 content4 content5";
   grid-gap: 1.5rem;
 
 }
 
 main{
-  background-color: #76dbc1;
   grid-area: main;
 }
 
