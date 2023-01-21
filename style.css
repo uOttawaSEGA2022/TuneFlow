@@ -128,9 +128,10 @@ h6 {
 
 textarea{
   width: 100%;
+  padding: 1%;
   background-color: #0b121a;
   border: 1px solid rgba(255,255,255,0.25);
-  border-radius: 5px;
+  border-radius: 20px;
   color: #fff;
   font-size: 1em;
 }
@@ -155,14 +156,15 @@ select{
 
 .container{
   display:grid;
-  height:100vh;
+  height:150vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
   grid-template-areas:
   "sidebar main main main"
   "sidebar main main main"
   "content1 main main main"
-  "content2 content3 content4 content5";
+  "content2 main main main"
+  "content3 content4 content5 content6";
   grid-gap: 1.5rem;
 
 }
