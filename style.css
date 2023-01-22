@@ -138,6 +138,7 @@ h5 {
 h6 {
   font-weight: 200;
   font-size: 15pt;
+  color:white;
 }
 
 textarea{
@@ -152,7 +153,7 @@ textarea{
 
 
 .textarea:focus{
-  border: 2px solid #76dbc1
+  border: 2px solid #76dbc1;
 }
 
 select{
@@ -312,7 +313,7 @@ color: #fff;
   color: #fff;
   border-radius: 0%;
   font-size: 60pt;
-  font-weight: 650
+  font-weight: 650;
 }
 
 h1 {
