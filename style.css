@@ -13,7 +13,7 @@ gap: 30px;
 color: #fff;
 }
 .h{
-  width: 70%;
+  width: 73%;
   height: 0.1px;
   border: 0 none;
   background-color: rgba(255,255,255,0.25);
@@ -142,7 +142,6 @@ h6 {
 }
 
 textarea{
-  width: 70%;
   padding: 1%;
   background-color: #0b121a00;
   border: 1px solid rgba(255,255,255,0.25);
@@ -171,14 +170,15 @@ select{
 
 .container{
   display:grid;
-  height: 120vh;
+  height: 160vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
   grid-template-areas:
   "sidebar main main main"
   "sidebar main main main"
   "content1 main main main"
-  "content2 content3 content4 content5";
+  "content2 content3 content4 content5"
+  "content6 content6 content7 content7";
   grid-gap: 1.5rem;
 
 }
@@ -207,6 +207,18 @@ main{
   grid-area: content4;
 }
 
+#content5{
+  grid-area: content5;
+}
+
+#content6{
+  grid-area: content6;
+}
+
+#content7{
+  grid-area: content7;
+}
+
 } @media screen and (max-width: 999px) {
   
   body {
@@ -221,7 +233,7 @@ gap: 30px;
 color: #fff;
 }
 .h{
-  width: 70%;
+  width: 73%;
   height: 0.1px;
   border: 0 none;
   background-color: rgba(255,255,255,0.25);
@@ -349,7 +361,6 @@ h6 {
 }
 
 textarea{
-  width: 70%;
   padding: 1%;
   background-color: #0b121a00;
   border: 1px solid rgba(255,255,255,0.25);
@@ -378,14 +389,15 @@ select{
 
 .container{
   display:grid;
-  height: 120vh;
+  height: 160vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr;
+  grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
   grid-template-areas:
   "sidebar main main main"
   "sidebar main main main"
   "content1 main main main"
-  "content2 content3 content4 content5";
+  "content2 content3 content4 content5"
+  "content6 content6 content7 content7";
   grid-gap: 1.5rem;
 
 }
@@ -413,5 +425,15 @@ main{
 #content4{
   grid-area: content4;
 }
-  
+
+#content5{
+  grid-area: content5;
+}
+
+#content6{
+  grid-area: content6;
+}
+
+#content7{
+  grid-area: content7;
 }
