@@ -266,7 +266,7 @@ color: #fff;
 }
 .inputBox input:valid,
 .inputBox input:focus{
-  border: 1px solid #76dbc1
+  border: 1px solid #76dbc1;
 }
 
 .btn{
@@ -338,13 +338,13 @@ h4 {
 
 h5 {
   font-weight: 600;
-  font-size: 30pt
+  font-size: 30pt;
 
 }
 
 h6 {
   font-weight: 200;
-  font-size: 15pt
+  font-size: 15pt;
 }
 
 textarea{
@@ -359,7 +359,7 @@ textarea{
 
 
 .textarea:focus{
-  border: 2px solid #76dbc1
+  border: 2px solid #76dbc1;
 }
 
 select{
