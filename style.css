@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 20000px) and (min-width: 1000px) { //desktop fullscreen
+@media screen and (max-width: 20000px) and (min-width: 1000px) {
   
 body {
 margin: 0;
@@ -10,7 +10,7 @@ display: flex;
 min-height: 100vh;
 flex-direction: column;
 gap: 30px;
-color: red;
+color: #fff;
 }
 .h{
   width: 70%;
@@ -59,7 +59,7 @@ color: red;
 }
 .inputBox input:valid,
 .inputBox input:focus{
-  border: 1px solid #76dbc1
+  border: 1px solid #76dbc1;
 }
 
 .btn{
@@ -105,7 +105,7 @@ color: red;
   color: #fff;
   border-radius: 0%;
   font-size: 60pt;
-  font-weight: 650
+  font-weight: 650;
 }
 
 h1 {
@@ -131,13 +131,14 @@ h4 {
 
 h5 {
   font-weight: 600;
-  font-size: 30pt
+  font-size: 30pt;
 
 }
 
 h6 {
   font-weight: 200;
-  font-size: 15pt
+  font-size: 15pt;
+    color:red;
 }
 
 textarea{
@@ -206,7 +207,7 @@ main{
   grid-area: content4;
 }
 
-} @media screen and (max-width: 999px) { //mobile
+} @media screen and (max-width: 999px) {
   
   body {
 margin: 0;
