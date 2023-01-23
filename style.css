@@ -4,7 +4,6 @@
 body {
 margin: 0;
 padding: 0;
-box-sizing: border-box;
 background-image: linear-gradient(to bottom right, #0b121a, #0c1319);
 display: flex;
 min-height: 100vh;
@@ -18,7 +17,7 @@ color: #fff;
   border: 0 none;
   background-color: rgba(255,255,255,0.25);
   margin-right: auto;
-  margin-left: 200px;
+  align-items: center;
 }
 
 .inputBox{
@@ -59,15 +58,16 @@ color: #fff;
 }
 .inputBox input:valid,
 .inputBox input:focus{
-  border: 1px solid #76dbc1;
+  border: 1px solid #76dbc1
 }
 
 .btn{
   border: 1px solid rgba(255,255,255,0.25);
   border-radius: 30px;
   background: none;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 20px;
+  font-weight: 300;
   cursor: pointer;
   margin: 10px;
   color: rgba(255,255,255,0.25);
@@ -104,7 +104,7 @@ color: #fff;
   color: #fff;
   border-radius: 0%;
   font-size: 60pt;
-  font-weight: 650;
+  font-weight: 650
 }
 
 h1 {
@@ -130,17 +130,17 @@ h4 {
 
 h5 {
   font-weight: 600;
-  font-size: 30pt;
+  font-size: 30pt
 
 }
 
 h6 {
   font-weight: 200;
-  font-size: 15pt;
-  color:white;
+  font-size: 15pt
 }
 
 textarea{
+  width: 100%;
   padding: 1%;
   background-color: #0b121a00;
   border: 1px solid rgba(255,255,255,0.25);
@@ -151,7 +151,7 @@ textarea{
 
 
 .textarea:focus{
-  border: 2px solid #76dbc1;
+  border: 2px solid #76dbc1
 }
 
 select{
@@ -169,15 +169,15 @@ select{
 
 .container{
   display:grid;
-  height: 160vh;
+  height: 180vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
   grid-template-areas:
   "sidebar main main main"
   "sidebar main main main"
-  "content1 main main main"
-  "content2 content3 content4 content5"
-  "content6 content6 content7 content7";
+  "sidebar main main main"
+  "content1 content2 content3 content4"
+  "content5 content6 content7 content7";
   grid-gap: 1.5rem;
 
 }
@@ -188,6 +188,7 @@ main{
 
 #sidebar{
   grid-area: sidebar;
+  height: 100%;
 }
 
 #content1{
@@ -217,13 +218,13 @@ main{
 #content7{
   grid-area: content7;
 }
+
 
 } @media screen and (max-width: 999px) {
   
-  body {
+body {
 margin: 0;
 padding: 0;
-box-sizing: border-box;
 background-image: linear-gradient(to bottom right, #0b121a, #0c1319);
 display: flex;
 min-height: 100vh;
@@ -237,7 +238,7 @@ color: #fff;
   border: 0 none;
   background-color: rgba(255,255,255,0.25);
   margin-right: auto;
-  margin-left: 200px;
+  align-items: center;
 }
 
 .inputBox{
@@ -278,15 +279,16 @@ color: #fff;
 }
 .inputBox input:valid,
 .inputBox input:focus{
-  border: 1px solid #76dbc1;
+  border: 1px solid #76dbc1
 }
 
 .btn{
   border: 1px solid rgba(255,255,255,0.25);
   border-radius: 30px;
   background: none;
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 20px;
+  font-weight: 300;
   cursor: pointer;
   margin: 10px;
   color: rgba(255,255,255,0.25);
@@ -323,7 +325,7 @@ color: #fff;
   color: #fff;
   border-radius: 0%;
   font-size: 60pt;
-  font-weight: 650;
+  font-weight: 650
 }
 
 h1 {
@@ -349,16 +351,17 @@ h4 {
 
 h5 {
   font-weight: 600;
-  font-size: 30pt;
+  font-size: 30pt
 
 }
 
 h6 {
   font-weight: 200;
-  font-size: 15pt;
+  font-size: 15pt
 }
 
 textarea{
+  width: 100%;
   padding: 1%;
   background-color: #0b121a00;
   border: 1px solid rgba(255,255,255,0.25);
@@ -369,7 +372,7 @@ textarea{
 
 
 .textarea:focus{
-  border: 2px solid #76dbc1;
+  border: 2px solid #76dbc1
 }
 
 select{
@@ -387,15 +390,15 @@ select{
 
 .container{
   display:grid;
-  height: 160vh;
+  height: 180vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
   grid-template-areas:
   "sidebar main main main"
   "sidebar main main main"
-  "content1 main main main"
-  "content2 content3 content4 content5"
-  "content6 content6 content7 content7";
+  "sidebar main main main"
+  "content1 content2 content3 content4"
+  "content5 content6 content7 content7";
   grid-gap: 1.5rem;
 
 }
@@ -406,6 +409,7 @@ main{
 
 #sidebar{
   grid-area: sidebar;
+  height: 100%;
 }
 
 #content1{
@@ -435,3 +439,4 @@ main{
 #content7{
   grid-area: content7;
 }
+
