@@ -1,0 +1,200 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+  text-decoration: none;
+  list-style: none;
+}
+:root{
+  --bg-color: #fff;
+  --text-color: #2d3240;
+  --main-color: #6385eb;
+}
+body {
+  padding-left: 12em;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+/* Style the tab */
+/*
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+*/
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 12%;
+  transition: all .50s ease;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo i{
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 10px;
+}
+.logo span{
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.tab{
+  display: flex;
+  overflow: hidden;
+  border: none;
+  background-color: #fff;
+}
+
+.tab button{
+  background-color: #fff;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all .50s ease;
+}
+.tab button:hover{
+  color: var(--main-color);
+}
+.tab button.active{
+  color: var(--main-color);
+} 
+
+.main{
+  display: flex;
+  align-items: center;
+}
+.main a{
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--text-color);
+  font-size: 1.1 rem;
+  font-weight: 500;
+  transition: all .50s ease;
+}
+.user{
+  display: flex;
+  align-items: center;
+}
+.user i{
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 7px;
+}
+.main a:hover{
+  color: var(--main-color);
+}
+#menu-icon{
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+@media (max-width: 1280px){
+  header{
+    padding: 14px 2%;
+    transition: .2s;
+  }
+  .tab button{
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+  body{
+    padding-left: 1.5em;
+  }
+}
+@media (max-width: 1090px){
+  #menu-icon{
+    display: block;
+  }
+  .tab{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 270px;
+    height: 29vh;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .50s ease;
+  }
+  .tab button{
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    transition: all .50s ease;
+  }
+  .tab button:hover{
+    color: var(--bg-color);
+    transform: translateX(5px);
+  }
+  .tab button.active{
+    color: var(--bg-color);
+  }
+  .tab.open{
+    right: 2%;
+  }
+}
+
+/* Style the buttons that are used to open the tab content */
+/*
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+*/
+/* Change background color of buttons on hover */
+/*
+.tab button:hover {
+  background-color: #ddd;
+}
+*/
+
+h3{
+  font-family: Segoe UI;
+  font-weight: 500;
+  font-size: large;
+}
+
+h4{
+  font-family: Segoe UI;
+  font-weight: 700;
+  font-size: medium;
+}
+
+h5{
+  font-family: Segoe UI;
+  font-weight: 350;
+  font-size: medium;
+}

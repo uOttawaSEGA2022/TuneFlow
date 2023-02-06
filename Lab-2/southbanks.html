@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<! This style sheet is taken from https://www.w3schools.com/howto/howto_js_tabs.asp>
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body onload="onLoadFunction();">
+	<header>
+		<a href="#" class="logo"><i class="ri-ship-2-fill"></i></i><span>SouthBanks Market</span></a>
+		<!-- Tab links, each one with an onclick event associated with it -->
+		<div class="tab">
+			<button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+			<button class="tablinks" onclick="openInfo(event, 'Products'); populateListProductChoices('dietSelect', 'displayProduct');">Products</button>
+			<button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+		</div>
+
+		<div class="main">
+			<a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+			<a href="#">Register</a>
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+
+	</header>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<!-- Tab content -->
+
+	<div id="Client" class="tabcontent">
+		<br>
+		<h3>Tell Us About Yourself</h3>
+		<br>
+		<h4>01.</h4>
+		<h5>Do you have any dietary preferences?</h5>
+		<br>
+
+		<form id="dietSelect" name="dietSelect">
+			<input type="checkbox" id="vegetarianCheckBox" name="dietSelect1" value="Vegetarian">
+			<label for="vegetarianCheckBox">Vegetarian</label><br>
+			<input type="checkbox" id="glutenFreeCheckBox" name="dietSelect2" value="GlutenFree">
+			<label for="glutenFreeCheckBox">GlutenFree</label><br>
+			<input type="checkbox" id="organicCheckBox" name="dietSelect3" value="Organic">
+			<label for="organicCheckBox">Organic</label><br>
+		</form>
+		<!-- <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="Vegetarian">Vegetarian</option>
+    <option value="GlutenFree">GlutenFree</option>
+    <option value="Organic">Organic</option>
+    <option value="Non-organic">Non-organic</option>
+    <option value="None">None</option>
+	</select> -->
+
+
+	</div>
+
+	<div id="Products" class="tabcontent">
+		<br>
+		<h3>Your targeted products</h3>
+		<br>
+		<h4>02.</h4>
+		<h5>We preselected products based on your restrictions.</h5>
+		<br>
+		<h5>Choose items to buy:</h5>
+		<div id="displayProduct"></div>
+		<button id="addCart" type="button" class="block" onclick="selectedItems()">
+			Add selected items to cart.
+		</button>
+	</div>
+
+	<div id="Cart" class="tabcontent">
+		<br>
+		<h3>Cart</h3>
+		<br>
+		<h4>03.</h4>
+		<h5>Here are your purchases.</h5>
+		<br>
+		<div id="displayCart"></div>
+	</div>
+	<br>
+	<br>
+	
+	<div style="position: absolute; bottom: 15px;">
+    		Site created by Steven Wilson, Jacob Maurice, Deniz
+		Jasarbasic and Cameron Cooke.
+    	</div>
+	
+	<script src="scripts/groceries.js"></script>
+	<script src="scripts/main.js"></script>
+
+</body>
+
+</html>
