@@ -12,12 +12,12 @@
 --main-color: #93BFCF;
 }
 
+
 .background-image{
     background-size: cover;
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     z-index: 1;
 }
 

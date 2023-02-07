@@ -1,0 +1,202 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Bike Guys</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Playfair Display font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500;1,700&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body style="cursor: url('images/cursor.png'), auto">
+
+    
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+    
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" width="60" height="60" alt="">
+            </a>
+        </nav>
+
+        <p class="marquee">
+            <span style="font-weight: 00; font-size: 150px">BIKE GUYS  BIKE GUYS  BIKE GUYS  BIKE GUYS  BIKE GUYS  BIKE GUYS  BIKE GUYS  BIKE GUYS  BIKE GUYS </span>
+        </p>
+            
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    <div class="row">
+        <div class="col-lg-12">
+            
+            <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+            <!-- Might be (or not) useful to show some information to the user -->
+            <div class="container-fluid" style="background-color: #1dd793; color: black">
+               
+                <br>
+                <br>
+         
+                <table class="table table-dark table-hover" style="background-color: transparent; color: black">
+                    <thead>
+                    <tr>
+                        <th><h1>Services</h1></th>
+                        <th><h1>Description</h1></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><h3>Bike Repair</h3></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper risus in ipsum mollis, eu elementum nulla imperdiet. Donec scelerisque nisi dolor, vel fringilla sem lacinia et. Nam placerat volutpat justo, vitae ullamcorper libero convallis vitae.</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Suspension Service</h3></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper risus in ipsum mollis, eu elementum nulla imperdiet. Donec scelerisque nisi dolor, vel fringilla sem lacinia et. Nam placerat volutpat justo, vitae ullamcorper libero convallis vitae.</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Ski Waxing</h3></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper risus in ipsum mollis, eu elementum nulla imperdiet. Donec scelerisque nisi dolor, vel fringilla sem lacinia et. Nam placerat volutpat justo, vitae ullamcorper libero convallis vitae.</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Skate Sharpening</h3></td>
+                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper risus in ipsum mollis, eu elementum nulla imperdiet. Donec scelerisque nisi dolor, vel fringilla sem lacinia et. Nam placerat volutpat justo, vitae ullamcorper libero convallis vitae.</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <br>
+              
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <div class="row">
+        <div class="col-lg-12">
+
+            <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+            <!-- Card columns allows multiple cards next to each other -->
+            <!-- The first card's button doesn't go anywhere, it could be a modal --> 
+            <!-- My second card limits the information seen and uses collapsible to show more -->
+            <div class="container-fluid" style="background-color: white">
+
+                <br>
+                <br>
+                <br>
+
+                <h2 style="width: 100%">Meet our team</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                        <div class="profile-card-2"><img src="images/Jess.jpg" class="img img-responsive">
+                        <div class="profile-name">JESSICA</div>
+                        <div class="profile-username">Receptionist</div>
+                        <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="profile-card-2"><img src="images/Victor.jpg" class="img img-responsive">
+                    <div class="profile-name">VICTOR</div>
+                    <div class="profile-username">Mechanic</div>
+                    <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="profile-card-2"><img src="images/Kat.jpg" class="img img-responsive">
+                <div class="profile-name">KATHERINE</div>
+                <div class="profile-username">Mechanic</div>
+                <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="profile-card-2"><img src="images/Sam.jpg" class="img img-responsive">
+            <div class="profile-name">SAM</div>
+            <div class="profile-username">Mechanic</div>
+            <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+        </div>
+    </div>
+            </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row"  style="background-color: white; color: black">
+        <div class="col-lg-6">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13419.39718946877!2d-75.70571793937202!3d45.41367244956483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b8f173bb61%3A0x785122f32ce21d6d!2sJoe%20Mamma%20Cycles!5e0!3m2!1sen!2sca!4v1675740127534!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-lg-6">
+           
+            <h2>Our Operating Hours</h2>
+            
+            <div class="row">
+                <div class="col-lg-3">
+                    Bike Guys <br>
+                    767 Bank Street <br>
+                    Ottawa, Ontario <br>
+                    K1S 3V3 <br>
+                    (613) 564-0459
+                </div>
+            
+                <div class="col-lg-9">
+                    Monday 9:00 a.m. - 5:00 p.m. <br>
+                    Tuesday 9:00 a.m. - 5:00 p.m. <br>
+                    Wednesday 9:00 a.m. - 5:00 p.m. <br>
+                    Thursday 9:00 a.m. - 5:00 p.m. <br>
+                    Friday 9:00 a.m. - 5:00 p.m. <br>
+                    Saturday 11:00 a.m. - 2:00 p.m. <br>
+                    Sunday Closed
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
