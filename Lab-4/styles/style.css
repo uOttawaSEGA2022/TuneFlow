@@ -13,7 +13,7 @@ body{
    overflow: hidden;
    white-space: nowrap;
    position: absolute;
-   font-family: 'Bebas Neue';
+   font-family: 'Playfair Display', serif;
    width: 100%;
    }
 
@@ -43,7 +43,6 @@ body{
    background-size: cover;
    box-sizing: border-box;
    background-repeat: no-repeat;
-   background-size: cover;
    height: 100vh;
    z-index: 1;
 }

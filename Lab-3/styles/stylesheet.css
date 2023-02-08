@@ -15,9 +15,9 @@
 
 .background-image{
     background-size: cover;
+    height: 100vh;
     box-sizing: border-box;
     background-repeat: no-repeat;
-    background-size: cover;
     z-index: 1;
 }
 
