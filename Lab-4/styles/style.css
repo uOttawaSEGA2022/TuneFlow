@@ -180,15 +180,31 @@ body{
 }
 
 .profile-card-2:hover .profile-name {
-    bottom: 80px;
+    bottom: 200px;
 }
 
 .profile-card-2:hover .profile-username {
-    bottom: 60px;
+    bottom: 180px;
 }
 
 .profile-card-2:hover .profile-icons {
     right: 40px;
+}
+
+.profile-card-2:hover .profile-hidden-description {
+    display: block;
+    bottom: 80px;
+    right: 40px;
+}
+
+.profile-hidden-description {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    transition: all linear 0.25s;
 }
 
 .profile-card-3 {
@@ -241,7 +257,7 @@ body{
     height: 110px;
     width: 110px;
     margin: 5px auto;
-}
+} 
 
 .profile-card-4 {
     max-width: 300px;
