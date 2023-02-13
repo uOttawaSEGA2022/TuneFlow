@@ -2,13 +2,17 @@
    color picker www.w3schools.com/colors/colors_picker.asp
 */
 
-body{
+body {
    background-color: black;
    color: black;
    overflow-x: hidden;
 }
 
-.trans{
+.trans img:hover {
+    background-color: red;
+}
+
+.trans {
     border-radius: 50px;
     padding-top: 1.2rem;
     padding-bottom: 1rem;
@@ -16,7 +20,7 @@ body{
     padding-right: 2rem;
 }
 
-.trans:hover{
+.trans:hover {
     background-color: black;
     color: white;
 }
@@ -688,4 +692,8 @@ body{
 
 .profile-card-10:hover img {
     transform: scale(1.1);
+}
+
+.table-dark img {
+    width: 80%;
 }
