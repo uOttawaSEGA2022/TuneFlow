@@ -27,7 +27,6 @@ body {
 .marquee {
    margin: 0 auto;
    overflow: hidden;
-   white-space: nowrap;
    position: absolute;
    font-family: 'Playfair Display', serif;
    width: 100%;
@@ -696,4 +695,24 @@ body {
 
 .table-dark img {
     width: 80%;
+}
+
+#errorMSG {
+    position: relative;
+    display: flex;
+    color: red;
+}
+
+#exampleModal {
+    width: 100%;
+}
+
+.row {
+    margin-right: 11px;
+    margin-left: -15px;
+}
+
+.form-control {
+    width: 94.5%;
+    margin-left: 0px;
 }
