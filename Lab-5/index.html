@@ -41,98 +41,47 @@
   <script src="scripts/app.js"></script>
     <script src="https://kit.fontawesome.com/d96e7ae48d.js" crossorigin="anonymous"></script>
 
+    <!-- Theme Roller -->
+    <link href="jquery-ui.css" rel="stylesheet">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.js"></script>
 
 </head>
 
 
 <body>
 
-  <header style="position: fixed">
-    <nav class="navbar navbar-light" style="background-color: transparent">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.png" width="60" height="60" alt="">
-      </a>
-    </nav>
+    <section class="ftco-section" style="padding: 0; margin: 0">
+		
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar" >
+		    <div class="container-fluid" style="padding-left: 5%; padding-right: 5%">
+		    	<a class="navbar-brand" href="#">Bike Guys</a>
+		    	<div class="social-media order-lg-last">
+	        </div>
+		      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+		        <span class="fa fa-bars"></span> Menu
+		      </button>
+		      <div class="collapse navbar-collapse" id="ftco-nav">
+		        <ul class="navbar-nav ml-auto mr-md-3">
+		        	<li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+		        	<li class="nav-item"><a href="#Services" class="nav-link">Services</a></li>
+		        	<li class="nav-item"><a href="#Experts" class="nav-link">Experts</a></li>
+		        	<li class="nav-item"><a href="#Time" class="nav-link">Where to find us</a></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </nav>
+    <!-- END nav -->
+  </div>
 
-    <!-- Hamburger -->
-    <div class="hamburger">
-      <div class="hamburger__container">
-        <span class="hamburger__top"></span>
-        <span class="hamburger__middle"></span>
-        <span class="hamburger__bottom"></span>
-      </div>
-    </div>
+	</section>
 
-    <!-- Menu -->
-    <!-- <div class="menu">
-    <div class="menu__container bg-white">
-      <nav class="menu__nav">
-        <ul class="menu__list">
-          <li class="menu__item js-span">Links</li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Link #1</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Link #2</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Link #3</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#>">Link #4</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Link #5</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="menu__nav">
-        <ul class="menu__list">
-          <li class="menu__item js-span">More Links</li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">More Link #1</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">More Link #2</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">More Link #3</a>
-          </li>
-          <li class="menu__item menu__item--contact">
-            <span>Contact</span>
-            <div class="menu__info">
-              <span>Seattle, WA</span>
-              <span>
-                <a class="menu__external" href="mailto:thomas.vaeth@gmail.com">thomas.vaeth@gmail.com</a>
-              </span>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <div class="menu__sidebar">
-        <div class="menu__flip">
-          <div class="menu__copy">
-            <span>All content & images &copy;2020 Thomas Vaeth.</span>
-            <span>Website by <a class="menu__external" href="https://thomasvaeth.com/" target="_blank" rel="noopener noreferrer">Thomas Vaeth</a>.</span>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <div class="menu__img bg-black">
-      <figure class="absolute-bg" style="background-image: url('https://source.unsplash.com/t2Sai-AqIpI/900x1600');"></figure>
-    </div> -->
-    </div>
-
-    <!-- Demo -->
-    <!-- <section class="demo">
-    <p class="demo__text">
-      #CodePenChallenge<br/>
-      Full-Page Navigation
-    </p>
-  </section> -->
-  </header>
-
-
+	<script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+    
 
   <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
   <!-- Should show the name of your company with an image or logo -->
@@ -162,9 +111,9 @@
         <table class="table table-dark" style="background-color: transparent; color: black">
           <thead>
             <tr>
-              <th>
+              <a id="Services"></a><th>
                 <h1>Our Services</h1>
-              </th>
+              </th></a>
               <th></th>
               <th></th>
               <th></th>
@@ -352,7 +301,7 @@
         <br>
         <br>
 
-        <h1 style="color: black">Meet our team <br><i class="fa-solid fa-people-group"></i></h1>
+                <a id="Experts"><h1  style="color: black">Meet our team <br><i class="fa-solid fa-people-group"></i></h1></a>
 
         <br>
         <br>
@@ -422,7 +371,7 @@
     <br>
     <br>
 
-    <div class="row m-6" style="background-color: white; color: black">
+    <div class="row m-6"  style="background-color: white; color: black">
       <div class="col-lg-6">
 
         <iframe
@@ -432,7 +381,7 @@
       </div>
       <div class="col-lg-6">
 
-        <h1>Our Operating Hours</h1>
+        <a id="Time"><h1>Our Operating Hours</h1></a>
 
         <br>
 
