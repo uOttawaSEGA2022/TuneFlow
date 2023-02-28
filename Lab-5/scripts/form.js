@@ -9,6 +9,8 @@ var lookup = {
     'Ski Waxing':  ['Sam'],
     'Skate Sharpening': ['Sam'],
  };
+
+ var expert = ""
  
  console.log(typeof jQuery)
 
@@ -22,11 +24,47 @@ var lookup = {
         // For each chocie in the selected option
         for (i = 0; i < lookup[selectValue].length; i++) {
        // Output choice in the target field
-       $('#choices').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>");
+       $('#choices').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>"); 
     }
+    expert = lookup[selectValue][0]
+    dateRestrict();
     });
 });
 
+$(function() {
+    $('#choices').change(function(){
+        var selectValue = $(this).val();
+        expert = selectValue
+        dateRestrict();
+    });
+});
+
+function dateRestrict(){
+    if (expert == 'Katherine'){
+        $('#datepicker').datepicker("destroy");
+        $('#datepicker').datepicker({
+            beforeShowDay: function(date) {
+                var day = date.getDay();
+                return [(day != 0 && day != 1)];
+            }
+        });
+    }       
+    else if (expert == 'Victor'){
+        $('#datepicker').datepicker("destroy");
+        $('#datepicker').datepicker({
+            beforeShowDay: function(date) {
+                var day = date.getDay();
+                return [(day != 4 && day != 5)];
+            }
+        });
+    }
+    else if (expert == 'Sam'){
+        $('#datepicker').datepicker("destroy");
+        $('#datepicker').datepicker({
+            beforeShowDay: $.datepicker.noWeekends
+        });
+    }
+}
 /*
  // When an option is changed, search the above for matching choices
  $('#options').on('change', function() {
@@ -43,11 +81,7 @@ var lookup = {
     }
  });*/
 
- $(function(){
-    $('#datepicker').datepicker({
-    beforeShowDay: $.datepicker.noWeekends
- });
-});
+
 
 var unavailableDates = ["06/29/2020","07/07/2020","07/10/2020"]
 const setDateFormat = "mm/dd/yy";
