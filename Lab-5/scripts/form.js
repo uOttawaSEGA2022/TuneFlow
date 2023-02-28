@@ -43,6 +43,10 @@ var lookup = {
     }
  });*/
 
+ $(function(){
+    $('#datepicker').datepicker();
+ });
+
 var unavailableDates = ["06/29/2020","07/07/2020","07/10/2020"]
 const setDateFormat = "mm/dd/yy";
 
