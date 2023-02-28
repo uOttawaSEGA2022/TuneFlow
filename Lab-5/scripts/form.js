@@ -1,15 +1,58 @@
-$('#myModal').modalSteps();
+const scriptSource = "https://code.jquery.com/jquery-3.6.3.min.js"
 
-$('#myModal').modalSteps({
-    btnCancelHtml: "Cancel",
-    btnPreviousHtml: "Previous",
-    btnNextHtml: "Next",
-    btnLastStepHtml: "Complete",
-    disableNextButton: false,
-    completeCallback: function () { },
-    callbacks: {},
-    getTitleAndStep: function () { }
+// Services - Experts select restrictions
+
+// Map your choices to your option value
+var lookup = {
+    'Bike Repair': ['Victor', 'Katherine'],
+    'Suspension Service': ['Victor', 'Katherine'],
+    'Ski Waxing':  ['Sam'],
+    'Skate Sharpening': ['Sam'],
+ };
+ 
+ console.log(typeof jQuery)
+
+ 
+ $(function() {
+    $('#options').change(function(){
+        var selectValue = $(this).val();
+
+        $('#choices').empty();
+    
+        // For each chocie in the selected option
+        for (i = 0; i < lookup[selectValue].length; i++) {
+       // Output choice in the target field
+       $('#choices').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>");
+    }
+    });
 });
+
+/*
+ // When an option is changed, search the above for matching choices
+ $('#options').on('change', function() {
+    // Set selected option as variable
+    var selectValue = $(this).val();
+ 
+    // Empty the target field
+    $('#choices').empty();
+    
+    // For each chocie in the selected option
+    for (i = 0; i < lookup[selectValue].length; i++) {
+       // Output choice in the target field
+       $('#choices').append("<option value='" + lookup[selectValue][i] + "'>" + lookup[selectValue][i] + "</option>");
+    }
+ });*/
+
+var unavailableDates = ["06/29/2020","07/07/2020","07/10/2020"]
+const setDateFormat = "mm/dd/yy";
+
+function disableDates(date) {
+    // Sunday is Day 0, disable all Sundays
+    if (date.getDay() == 0)
+        return [false];
+    var string = jQuery.datepicker.formatDate(setDateFormat, date);
+    return [ unavailableDates.indexOf(string) == -1 ]
+}
 
 function validateCardNumber() {
     //Check if the number contains only numeric value  

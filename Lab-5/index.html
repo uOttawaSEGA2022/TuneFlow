@@ -17,7 +17,7 @@
 
   <!-- Playfair Display font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <script src="scripts/form.js"></script>
+  
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500;1,700&family=Poppins:wght@500;600&display=swap"
@@ -38,13 +38,14 @@
   <link href="styles/navbar.css" rel="stylesheet" type="text/css">
 
   <!-- JS Scripts -->
-  <script src="scripts/app.js"></script>
+  <script src="scripts/form.js"></script>
     <script src="https://kit.fontawesome.com/d96e7ae48d.js" crossorigin="anonymous"></script>
 
-    <!-- Theme Roller -->
-    <link href="jquery-ui.css" rel="stylesheet">
+    <!-- 
+    <link href="styles/jquery-ui.css" rel="stylesheet" type="test/css">
     <script src="external/jquery/jquery.js"></script>
     <script src="jquery-ui.js"></script>
+Theme Roller -->
 
 </head>
 
@@ -55,7 +56,7 @@
 		
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar" >
-		    <div class="container-fluid" style="padding-left: 5%; padding-right: 5%">
+		    <div class="container-fluid" style="padding-left: 7%; padding-right: 7%">
 		    	<a class="navbar-brand" href="#">Bike Guys</a>
 		    	<div class="social-media order-lg-last">
 	        </div>
@@ -76,11 +77,6 @@
   </div>
 
 	</section>
-
-	<script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
     
 
   <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
@@ -98,21 +94,21 @@
             background-size: cover">
   </div>
 
-  <div class="row" style="background-color: #1dd793">
+  <div class="row" style="background-color: #08090B">
     <div class="col-lg-12">
 
       <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
       <!-- Might be (or not) useful to show some information to the user -->
-      <div class="container-fluid" style="background-color: #1dd793; color: black">
+      <div class="container-fluid" style="background-color: #08090B; color: black">
 
         <br>
         <br>
 
-        <table class="table table-dark" style="background-color: transparent; color: black">
+        <table class="table table-dark" style="background-color: transparent; color: white; width: 100%">
           <thead>
             <tr>
               <a id="Services"></a><th>
-                <h1>Our Services</h1>
+                <h1 style="color: white; font-size: 80px; font-weight: 500; font-family: Helvetica">Our Services</h1>
               </th></a>
               <th></th>
               <th></th>
@@ -121,51 +117,48 @@
           </thead>
           <tbody>
             <tr>
-              <td>
-                <h3 style="font-weight: 450"><i class="fa-solid fa-bicycle"></i><br>Bike Repair </h3>
-                <h4>$100</h4>
-              </td>
-              <td>Our experts pride ourselves on our ability to repair your bike, regardless of the problem. <br> With
-                same-day service, we are able to get you back on the road as quick as possible! </td>
-              <td>Specialist: Victor</td>
-              <td> <img src="images/repair.jpg" alt="repair pic"> </td>
-            </tr>
-            <tr>
-              <td>
-                <h3 style="font-weight: 450"><i class="fa-solid fa-angles-up"></i></i><br>Suspension Service</h3>
-                <h4>$50</h4>
-              </td>
-              <td>Ride feeling rough? Get your suspension serviced at Bike Guys today!</td>
-              <td>Specialist: Katherine</td>
-              <td> <img src="images/sus.jpg" alt="repair pic"> </td>
+              <td style="width: 25%">
+                <h3 style="font-weight: 450; color: white; font-size: 40px"><i class="fa-solid fa-bicycle" ></i>  Bike Repair </h3>
+                <h4 style="color: white">$100</h4><br>
+              
+                Our experts pride ourselves on our ability to repair your bike, regardless of the problem. With
+                same-day service, we are able to get you back on the road as quick as possible! <br><br>
+                Specialist: Victor & Katherine
+              <td style="width: 25%"> <img src="images/repair.jpg" alt="repair pic"> </td>
+              <td style="width: 25%">
+                <h3 style="font-weight: 450; color: white; font-size: 40px"><i class="fa-solid fa-angles-up"></i></i>  Suspension Service</h3>
+                <h4 style="color: white">$50</h4><br>
+              
+              Ride feeling rough? Get your suspension serviced at Bike Guys today! <br><br>
+              Specialist: Victor & Katherine</td>
+              <td style="width: 25%"> <img src="images/sus.jpg" alt="repair pic"> </td>
 
             </tr>
             <tr>
-              <td>
-                <h3 style="font-weight: 450"><i class="fa-regular fa-person-skiing"></i><br>Ski Waxing</h3>
-                <h4>$25</h4>
-              </td>
-              <td>With our versatile team, we do more than just bikes! <br>Get your skis waxed before you hit the slopes
-                this winter! </td>
-              <td>Specialist: Sam</td>
-              <td> <img src="images/wax-skis.jpg" alt="repair pic"> </td>
-            </tr>
-            <tr>
-              <td>
-                <h3 style="font-weight: 450"><i class="fa-solid fa-person-skating"></i><br>Skate Sharpening</h3>
-                <h4>$15</h4>
-              </td>
-              <td>Every winter we offer our specialty 15 minute skate sharpening services for only $15! </td>
-              <td>Specialist: Sam</td>
-              <td> <img src="images/skate.jpg" alt="repair pic"> </td>
+              <td style="width: 25%">
+                <h3 style="font-weight: 450; color: white; font-size: 40px"><i class="fa-regular fa-person-skiing"></i>  Ski Waxing</h3>
+                <h4 style="color: white">$25</h4><br>
+              
+              With our versatile team, we do more than just bikes! Get your skis waxed before you hit the slopes
+              this winter! <br><br>
+              Specialist: Sam</td>
+              <td style="width: 25%"> <img src="images/wax-skis.jpg" alt="repair pic"> </td>
+           
+              <td style="width: 25%">
+                <h3 style="font-weight: 450; color: white; font-size: 40px"><i class="fa-solid fa-person-skating"></i>  Skate Sharpening</h3>
+                <h4 style="color: white">$15</h4><br>
+            
+              Every winter we offer our specialty 15 minute skate sharpening services for only $15! <br><br>
+              Specialist: Sam</td>
+              <td style="width: 25%"> <img src="images/skate.jpg" alt="repair pic"> </td>
             </tr>
           </tbody>
         </table>
 
                 <!-- Button trigger modal -->
                 
-                <button type="button" class="button trans"  style="background-color: transparent; border: 1px solid black; font-family: Helvetica" data-toggle="modal" data-target="#exampleModal">
-                    <h4 style="color: black; font-weight: 450">Make a reservation</h4>
+                <button type="button" class="button trans"  style="background-color: transparent; border: 1px solid white; font-family: Helvetica" data-toggle="modal" data-target="#exampleModal">
+                    <h4 style="color: white; font-weight: 450">Make a reservation</h4>
                 </button>
 
 
@@ -207,7 +200,8 @@
                         placeholder="bike@guys.com">
                     </div>
 
-                    <div class="form-group">
+                    <!--
+                      <div class="form-group">
                       <label for="exampleFormControlSelect1">Select one of our services</label>
                       <select class="form-control" id="exampleFormControlSelect1">
                         <option>Bike Repair - $100 </option>
@@ -216,31 +210,45 @@
                         <option>Skate Sharpening - $15 </option>
                       </select>
                     </div>
+                  -->
 
                     <div class="form-group">
-                      <label for="exampleFormControlSelect1">Select the professional</label>
-                      <select class="form-control" id="exampleFormControlSelect1">
-                        <option>Victor </option>
-                        <option>Katherine</option>
-                        <option>Sam </option>
-                        <option></option>
-                      </select>
-                    </div>
+                    <label for="exampleFormControlSelect1">Select one of our services</label> <br>
+                    <select id="options">
+                      <option value="" disabled selected>Select an option</option>
+                      <option value="Bike Repair">Bike Repair - $100</option>
+                      <option value="Suspension Service">Suspension Service - $50</option>
+                      <option value="Ski Waxing">Ski Waxing - $25</option>
+                      <option value="Skate Sharpening">Skate Sharpening - $15</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Select the professional</label> <br>
+                    <select id="choices">
+                      <option value="" disabled selected>Please select an option</option>
+                    </select>
+                  </div>
 
                     <div class="form-group">
-                      <label for="exampleFormDate">Enter a Date</label>
+                      <label for="exampleFormDate tooltip" title="Availabilities differ based on our experts">Enter a Date</label> <br>
                       <input type="date" name="date" min="2023-01-01">
-                    </div>
+                  </div>
 
+                  
                     <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Comments or Special Requirements</label>
+                      <label for="exampleFormControlTextarea1 tooltip" title="Tell us about any issues you are experiencing with your bike!">Comments or Special Requirements</label>                      
                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    </div>
+                  </div>
 
+                    
+                
                     <h5><i class="fa-solid fa-credit-card"></i> Credit Card Information</h5>
+              
+                    
 
                     <div class="form-group">
-                      <label for="creditCardBox">Card Number</label>
+                      <label for="creditCardBox tooltip" title="The payment will be charged to your card upon finalizing the reservation">Card Number</label>
                       <input type="tel" class="form-control" id="creditCardBox" placeholder="xxxx xxxx xxxx xxxx">
 
                       <br>
@@ -324,7 +332,7 @@
                 <div class="profile-name"><i class="fa-solid fa-wrench fa-2xs"></i> VICTOR</div>
                 <div class="profile-username"></i>Mechanic</div>
                 <div class="profile-hidden-description">Fits participants to the right size and style bike and safety
-                  gear. Enforces systems to ensure quality customer care and equipment repair.</div>
+                  gear.</div>
                 <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i
                       class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
               </div>
@@ -345,8 +353,7 @@
               <div class="profile-card-2"><img src="images/Sam.jpg" class="img img-responsive">
                 <div class="profile-name"><i class="fa-solid fa-person-skiing-nordic fa-2xs"></i> SAM</div>
                 <div class="profile-username">Ski and Skate Specialist</div>
-                <div class="profile-hidden-description">Installs, maintains, and repairs ski lifts, including the cars,
-                  the wires, and the motors that keep the lifts running. </div>
+                <div class="profile-hidden-description">Sharpens ice skates and repairs skis to get you back on the rink or the slope as quick as possible! </div>
                 <div class="profile-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i
                       class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
               </div>
