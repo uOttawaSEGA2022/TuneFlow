@@ -11,7 +11,7 @@
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<!-- Conventional CSS StyleSheet -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!-- Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -39,7 +39,7 @@
 	<h2 style="text-align: center">What do you think of the UI of the <a href="http://apple.com" target="_blank">Apple</a> website?
 	</h2>
 
-	<form id="myform" style="padding: 5%" action="index.php">
+	<form action="/" method="post" id="myform" style="padding: 5%" action="index.php">
 		
 		<br>
 	
@@ -69,21 +69,21 @@
 								<br>
 
 								<div class="inputBox">
-									<input type="text" required="required">
+									<input type="text" required="required" name="firstName">
 									<span style="font-weight: 400">First Name</span>
 								</div>
 
 								<br>
 
 								<div class="inputBox">
-									<input type="text" required="required">
+									<input type="text" required="required" name="lastName">
 									<span style="font-weight: 400">Last Name</span>
 								</div>
 
 								<br>
 
 								<div class="inputBox">
-									<input type="text" required="required">
+									<input type="text" required="required" name="age">
 									<span style="font-weight: 400">Age</span>
 								</div>
 							
@@ -136,9 +136,9 @@
 													<br>
 					
 													<p>
-														<input type="checkbox" name="reason" value="ad"> An advertisement<br>
-														<input type="checkbox" name="reason" value="search"> I searched for it<br>
-														<input type="checkbox" name="reason" value="reccommended"> It was reccomended to
+														<input type="checkbox" name="reason" value="ad" name="ad"> An advertisement<br>
+														<input type="checkbox" name="reason" value="search" name="search"> I searched for it<br>
+														<input type="checkbox" name="reason" value="recommended" name="recommended"> It was recommended to
 														me<br>
 													</p>
 									</th>
@@ -220,7 +220,10 @@
 						<br>
 						<br>
 						<div class="vertical-center my-auto">
-						<a href="#" class="btn">Submit Form</a>
+							<button type="submit" name="submit" class="btn">
+								Submit Form
+							</button>
+						<!-- <a href="#" class="btn">Submit Form</a> -->
 						</div>
 						
 						<br>
