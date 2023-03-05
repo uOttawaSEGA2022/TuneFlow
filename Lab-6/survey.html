@@ -150,7 +150,7 @@
 													<br>
 					
 													<p>
-														<select id="favorite">
+														<select id="favorite" name="navigation">
 															<option value="easy" selected="selected">Intuitive</option>
 															<option value="average">Moderatly Intuitive</option>
 															<option value="difficult">Unintuitive</option>
@@ -176,8 +176,8 @@
 					
 													<p>
 					
-														<input type="radio" name="appealing" value="Yes">Yes<br>
-														<input type="radio" name="appealing" value="No">No<br>
+														<input type="radio" name="comfort" value="Yes">Yes<br>
+														<input type="radio" name="comfort" value="No">No<br>
 					
 													</p>
 									</th>
@@ -189,7 +189,7 @@
 													<h6 class="card-title">How likely are you to visit this site again?</h6>
 													<br>
 											<p>
-												<select id="likeliness">
+												<select id="likeliness" name="reVisiting">
 													<option value="veryLikely">Very likely</option>
 													<option value="likely">Likely</option>
 													<option value="notLikely" selected="selected">Not likely</option>
@@ -201,13 +201,13 @@
 					
 													<h6 class="card-title">What changes would you make to this site?</h6>
 					
-														<textarea rows="4" cols="50"></textarea>
+														<textarea rows="4" cols="50" name="changes"></textarea>
 									</th>
 									<th>
 										<h1>07.</h1>
 					
 													<h6>Do you have any other comments?</h6>
-													<textarea rows="5" cols="80"></textarea>
+													<textarea rows="5" cols="80" name="otherComments"></textarea>
 									</th>
 									<th></th>
 								</tr>
@@ -220,7 +220,7 @@
 						<br>
 						<br>
 						<div class="vertical-center my-auto">
-							<button type="submit" name="submit" class="btn">
+							<button type="submit" class="btn">
 								Submit Form
 							</button>
 						<!-- <a href="#" class="btn">Submit Form</a> -->
