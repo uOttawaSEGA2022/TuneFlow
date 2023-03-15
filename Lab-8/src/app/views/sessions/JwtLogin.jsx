@@ -7,6 +7,8 @@ import { Formik } from 'formik';
 import { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
+import { withStyles } from "@material-ui/core/styles";
+import 'app/components/font.css';
 
 const FlexBox = styled(Box)(() => ({ display: 'flex', alignItems: 'center' }));
 
@@ -24,6 +26,23 @@ const ContentBox = styled(Box)(() => ({
     borderColor: '#FFFFFF',
   },
 }));
+
+const CustomColorCheckbox = withStyles({
+  root: {
+    color: "#25D1F6",
+    "&$checked": {
+      color: "#25D1F6"
+    }
+  },
+  checked: {}
+})((props) => <Checkbox color="default" {...props} />);
+
+const imgStyle = {
+  height: '100%',
+  "@media (max-width: 1000px)": {
+    display: "none"
+  },
+};
 
 const JWTRoot = styled(JustifyBox)(() => ({
   background: '#181818',
@@ -65,6 +84,10 @@ const JwtLogin = () => {
 
   return (
     <JWTRoot>
+      <Box position="absolute" top={3} left={38} m={2} style={{color: 'white', zIndex: '1', fontFamily: 'Fahkwang', fontWeight: '600', fontSize: 15}}>
+        <h1>TuneFlow</h1>
+      </Box>
+      
       
       <Grid container justifyContent="center">
 
@@ -146,7 +169,7 @@ const JwtLogin = () => {
 
                   <FlexBox justifyContent="space-between">
                     <FlexBox gap={1}>
-                      <Checkbox
+                      <CustomColorCheckbox
                         size="medium"
                         name="remember"
                         onChange={handleChange}
@@ -169,7 +192,6 @@ const JwtLogin = () => {
                   <LoadingButton
                     type="submit"
                     size="medium"
-                    color="primary"
                     loading={loading}
                     variant="contained"
                     sx={{ my: 2, backgroundColor: '#25D1F6', color: "#181818", width: "100%" }}
@@ -196,7 +218,7 @@ const JwtLogin = () => {
 
         <Grid item sm={6} xs={12}>
 
-          <img src="/assets/images/illustrations/loginCover.png" width="100%" alt="" />
+          <img src="/assets/images/illustrations/loginCover.png" width={["100%", "20%"]} alt="" style={imgStyle}/>
         </Grid>
       </Grid>
     </JWTRoot>

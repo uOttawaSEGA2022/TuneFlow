@@ -7,7 +7,7 @@ import {
   getCartList,
   updateCartAmount,
 } from 'app/redux/actions/EcommerceActions';
-import { sideNavWidth, topBarHeight } from 'app/utils/constant';
+import { topBarHeight } from 'app/utils/constant';
 import { Fragment, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -26,8 +26,8 @@ const StyledIconButton = styled(IconButton)(({ theme }) => ({
 const MiniCart = styled('div')(({ theme }) => ({
   height: '100%',
   display: 'flex',
+  width: 500,
   flexDirection: 'column',
-  width: sideNavWidth,
 }));
 
 const CartBox = styled('div')(() => ({
@@ -56,7 +56,7 @@ const ProductBox = styled('div')(() => ({
 }));
 
 const IMG = styled('img')(() => ({
-  width: 48,
+  width: 100,
 }));
 
 const ProductDetails = styled('div')(() => ({
@@ -70,7 +70,6 @@ const ProductDetails = styled('div')(() => ({
     overflow: 'hidden',
     textOverflow: 'ellipsis',
     display: 'block',
-    width: 120,
     marginBottom: '4px',
   },
 }));
@@ -137,7 +136,7 @@ function ShoppingCart({ container }) {
         >
           <MiniCart>
             <CartBox>
-              <Icon color="primary">shopping_cart</Icon>
+              <Icon sx={{color: "#181818"}}>shopping_cart</Icon>
               <h5>Cart</h5>
             </CartBox>
 
@@ -183,9 +182,8 @@ function ShoppingCart({ container }) {
             </Box>
 
             <Button
-              sx={{ width: '100%', borderRadius: 0 }}
+              sx={{ width: '100%', borderRadius: 0, backgroundColor: "#25D1F6",  color: "#181818"}}
               variant="contained"
-              color="primary"
               onClick={handleCheckoutClick}
             >
               Checkout (${totalCost.toFixed(2)})
