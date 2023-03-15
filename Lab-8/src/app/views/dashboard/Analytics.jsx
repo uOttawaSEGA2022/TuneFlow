@@ -1,10 +1,7 @@
 import { Card, Grid, styled, useTheme } from '@mui/material';
 import { Fragment } from 'react';
-// import Campaigns from './shared/Campaigns';
 import DoughnutChart from './shared/Doughnut';
 import RowCards from './shared/RowCards';
-// import StatCards from './shared/StatCards';
-// import StatCards2 from './shared/StatCards2';
 import SimpleCard from 'app/components/SimpleCard';
 import LineChart from 'app/views/charts/echarts/LineChart'
 import ComparisonChart from 'app/views/charts/echarts/ComparisonChart'
@@ -50,7 +47,7 @@ const Analytics = () => {
 
           <Grid item lg={4} md={4} sm={12} xs={12}>
             <Card sx={{ px: 3, py: 2, mb: 3 }}>
-              <Title>Traffic Sources</Title>
+              <Title>Top Genres</Title>
               <SubTitle>Last 30 days</SubTitle>
 
               <DoughnutChart
@@ -61,7 +58,7 @@ const Analytics = () => {
           </Grid>
         </Grid>
 
-        <SimpleCard title="Line Chart">
+        <SimpleCard title="Weekly Listeners">
           <LineChart
             height="350px"
             color={[palette.primary.main, palette.primary.light]}
@@ -70,7 +67,7 @@ const Analytics = () => {
 
         <br></br>
 
-        <SimpleCard title="Comparison Chart">
+        <SimpleCard title="Six-Month Active Listeners Recap">
         <ComparisonChart
           height="350px"
           color={[palette.primary.dark, palette.primary.light]}

@@ -27,7 +27,7 @@ const LineChart = ({ height, color = [] }) => {
       axisLine: { show: false },
       axisTick: { show: false },
       splitLine: {
-        lineStyle: { color: theme.palette.text.secondary, opacity: 0.15 },
+        lineStyle: { color: "#24A4C0", opacity: 0.15 },
       },
       axisLabel: { color: theme.palette.text.secondary, fontSize: 13, fontFamily: 'roboto' },
     },
@@ -53,7 +53,7 @@ const LineChart = ({ height, color = [] }) => {
     ],
   };
 
-  return <ReactEcharts style={{ height: height }} option={{ ...option, color: [...color] }} />;
+  return <ReactEcharts style={{ height: height }} option={{ ...option, color: ["#24A4C0", "#39DCFF"] }} />;
 };
 
 export default LineChart;

@@ -1,9 +1,7 @@
 import React from 'react'
-import { useTheme } from '@mui/system'
 import ReactEcharts from 'echarts-for-react'
 
-const DoughnutChart = ({ height, color = [] }) => {
-    const theme = useTheme()
+const DoughnutChart = ({ height, color = "#00738C" }) => {
 
     const option = {
         legend: {
@@ -12,7 +10,7 @@ const DoughnutChart = ({ height, color = [] }) => {
             icon: 'circle',
             bottom: 0,
             textStyle: {
-                color: theme.palette.text.secondary,
+                color: "#00738C",
                 fontSize: 13,
                 fontFamily: 'roboto',
             },
@@ -57,7 +55,7 @@ const DoughnutChart = ({ height, color = [] }) => {
                         show: false,
                         position: 'center', // shows the description data to center, turn off to show in right side
                         textStyle: {
-                            color: theme.palette.text.secondary,
+                            color: "#00738C",
                             fontSize: 13,
                             fontFamily: 'roboto',
                         },
@@ -68,7 +66,7 @@ const DoughnutChart = ({ height, color = [] }) => {
                         textStyle: {
                             fontSize: '14',
                             fontWeight: 'normal',
-                            // color: "rgba(15, 21, 77, 1)"
+                            color: "#00738C"
                         },
                         formatter: '{b} \n{c} ({d}%)',
                     },
@@ -81,11 +79,11 @@ const DoughnutChart = ({ height, color = [] }) => {
                 data: [
                     {
                         value: 65,
-                        name: 'Google',
+                        name: 'Hip-Hop',
                     },
                     {
                         value: 20,
-                        name: 'Facebook',
+                        name: 'R&B',
                     },
                     { value: 15, name: 'Others' },
                 ],
@@ -93,7 +91,7 @@ const DoughnutChart = ({ height, color = [] }) => {
                     emphasis: {
                         shadowBlur: 10,
                         shadowOffsetX: 0,
-                        shadowColor: 'rgba(0, 0, 0, 0.5)',
+                        shadowColor: '#00738C',
                     },
                 },
             },
@@ -105,7 +103,7 @@ const DoughnutChart = ({ height, color = [] }) => {
             style={{ height: height }}
             option={{
                 ...option,
-                color: [...color],
+                color: ["#1B7F94", "#24A4C0", "#39DCFF"],
             }}
         />
     )

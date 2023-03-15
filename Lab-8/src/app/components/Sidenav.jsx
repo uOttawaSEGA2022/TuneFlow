@@ -1,7 +1,9 @@
 import { styled } from '@mui/system';
 import { MatxVerticalNav } from 'app/components';
+import Upload from 'app/components/MatxVerticalNav/Upload';
 import useSettings from 'app/hooks/useSettings';
 import { navigations } from 'app/navigations';
+import { uploadData } from 'app/components/MatxVerticalNav/uploadData';
 import { Fragment } from 'react';
 import Scrollbar from 'react-perfect-scrollbar';
 
@@ -46,6 +48,8 @@ const Sidenav = ({ children }) => {
     <Fragment>
       <StyledScrollBar options={{ suppressScrollX: true }}>
         {children}
+        <Upload items={uploadData} />
+        
         <MatxVerticalNav items={navigations} />
       </StyledScrollBar>
 

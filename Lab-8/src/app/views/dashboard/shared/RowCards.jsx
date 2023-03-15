@@ -24,15 +24,16 @@ const ProjectName = styled(Span)(({ theme }) => ({
 const StarOutline = styled(Fab)(() => ({
   marginLeft: 0,
   boxShadow: 'none',
-  background: '#08ad6c !important',
-  backgroundColor: 'rgba(9, 182, 109, 1) !important',
+  background: '#25D1F6 !important',
+  backgroundColor: '#25D1F6 !important',
 }));
 
 const DateRange = styled(Fab)(({ theme }) => ({
   marginLeft: 0,
   boxShadow: 'none',
   color: 'white !important',
-  background: `${theme.palette.error.main} !important`,
+  background: '#EB4F5C !important',
+  backgroundColor: '#EB4F5C !important',
 }));
 
 const StyledAvatar = styled(Avatar)(() => ({
@@ -62,7 +63,7 @@ const RowCards = () => {
                   </DateRange>
                 )}
               </Hidden>
-              <ProjectName>Project {id}</ProjectName>
+              <ProjectName>Sample {id}</ProjectName>
             </Box>
           </Grid>
 

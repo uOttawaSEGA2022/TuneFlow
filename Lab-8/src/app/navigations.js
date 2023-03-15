@@ -1,7 +1,6 @@
 export const navigations = [
-  { name: 'Upload Song', path: '/', icon: 'upload' },
   { name: 'Dashboard', path: '/dashboard/default', icon: 'dashboard' },
-  { name: 'Search', path: '/', icon: 'search' },
-  { name: 'Your Library', path: '/', icon: 'library_music' },
-  { name: 'Settings', path: '/', icon: 'settings' },
+  { name: 'Search', path: '/search', icon: 'search' },
+  { name: 'Your Library', path: '/library', icon: 'library_music' },
+  { name: 'Settings', path: '/settings', icon: 'settings' },
 ];
