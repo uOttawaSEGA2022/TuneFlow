@@ -20,6 +20,10 @@ const buttonStyle = {
   width: "100%", 
   backgroundColor: '#25D1F6',
   color: "#181818", 
+
+  "&:hover": {
+    background: "#157589"
+  },
 }
 
 const CustomColorCheckbox = withStyles({

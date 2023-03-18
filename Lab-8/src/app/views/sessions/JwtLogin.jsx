@@ -27,6 +27,17 @@ const ContentBox = styled(Box)(() => ({
   },
 }));
 
+const buttonStyle = {
+  my: 2, 
+  backgroundColor: '#25D1F6', 
+  color: "#181818", 
+  width: "100%",
+  
+  "&:hover": {
+    background: "#157589"
+  },
+}
+
 const CustomColorCheckbox = withStyles({
   root: {
     color: "#25D1F6",
@@ -194,7 +205,7 @@ const JwtLogin = () => {
                     size="medium"
                     loading={loading}
                     variant="contained"
-                    sx={{ my: 2, backgroundColor: '#25D1F6', color: "#181818", width: "100%" }}
+                    sx={buttonStyle}
                   >
                     Login
                   </LoadingButton>

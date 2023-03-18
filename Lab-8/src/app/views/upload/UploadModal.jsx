@@ -39,6 +39,9 @@ const buttonStyle = {
   color: "#292929",
   left: '50%',
   transform: 'translateX(-50%)',
+  "&:hover": {
+    background: "#1994AE"
+  },
 }
 
 const imgStyle = {
@@ -47,6 +50,12 @@ const imgStyle = {
   alignItems: 'center',
   marginTop: '110px',
   marginBottom: '60px',
+  userDrag: 'none',
+  userSelect: 'none',
+  mozUserSelect: 'none',
+  webkitUserDrag: 'none',
+  webkitUserSelect: 'none',
+  msUserSelect: 'none',
 }
 
 const iconButtonStyle = {
