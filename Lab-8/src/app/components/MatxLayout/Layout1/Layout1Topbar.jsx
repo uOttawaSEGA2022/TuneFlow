@@ -98,7 +98,7 @@ const Layout1Topbar = () => {
 
         <Box display="flex" alignItems="center">
 
-          <Link to="/dashboard/default/fr">
+          <Link to="fr/dashboard/default">
                 <Span> EN/FR </Span>
           </Link>
           <Span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </Span>
