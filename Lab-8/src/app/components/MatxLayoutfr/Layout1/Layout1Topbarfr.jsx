@@ -98,6 +98,11 @@ const Layout1Topbar = () => {
 
         <Box display="flex" alignItems="center">
 
+        <Link to="/dashboard/default">
+                <Span> EN/FR </Span>
+          </Link>
+          <Span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </Span>
+
           <ShoppingCart />
 
           <MatxMenu
