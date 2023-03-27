@@ -1,0 +1,82 @@
+import { Card, Grid, styled, useTheme } from '@mui/material';
+import { Fragment } from 'react';
+import DoughnutChart from './sharedfr/Doughnutfr';
+import RowCards from './sharedfr/RowCards';
+import SimpleCard from 'app/components/SimpleCard';
+import LineChart from 'app/views/chartsfr/echarts/LineChartfr'
+import ComparisonChart from 'app/views/charts/echarts/ComparisonChart'
+
+const ContentBox = styled('div')(({ theme }) => ({
+  margin: '30px',
+  [theme.breakpoints.down('sm')]: { margin: '16px' },
+}));
+
+const Title = styled('span')(() => ({
+  fontSize: '1rem',
+  fontWeight: '500',
+  marginRight: '.5rem',
+  textTransform: 'capitalize',
+}));
+
+const SubTitle = styled('span')(({ theme }) => ({
+  fontSize: '0.875rem',
+  color: theme.palette.text.secondary,
+}));
+
+const H4 = styled('h4')(({ theme }) => ({
+  fontSize: '1rem',
+  fontWeight: '500',
+  marginBottom: '16px',
+  textTransform: 'capitalize',
+  color: theme.palette.text.secondary,
+}));
+
+const Analytics = () => {
+  const { palette } = useTheme();
+
+  return (
+    <Fragment>
+      <ContentBox className="analytics">
+
+        <Grid container spacing={3}>
+          <Grid item lg={8} md={8} sm={12} xs={12}>
+
+            <H4>Projets en cours</H4>
+            <RowCards />
+          </Grid>
+
+          <Grid item lg={4} md={4} sm={12} xs={12}>
+            <Card sx={{ px: 3, py: 2, mb: 3 }}>
+              <Title>Principaux genres</Title>
+              <SubTitle>30 derniers jours</SubTitle>
+
+              <DoughnutChart
+                height="285px"
+                color={[palette.primary.dark, palette.primary.main, palette.primary.light]}
+              />
+            </Card>
+          </Grid>
+        </Grid>
+
+        <SimpleCard title="Auditeurs hebdomadaires">
+          <LineChart
+            height="350px"
+            color={[palette.primary.main, palette.primary.light]}
+          />
+        </SimpleCard>
+
+        <br></br>
+
+        <SimpleCard title="Récapitulatif des auditeurs actifs au bout de six mois">
+        <ComparisonChart
+          height="350px"
+          color={[palette.primary.dark, palette.primary.light]}
+        />
+      </SimpleCard>
+
+      </ContentBox>
+    </Fragment>
+  );
+};
+
+export default Analytics;

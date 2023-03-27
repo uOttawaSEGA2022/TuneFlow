@@ -7,7 +7,7 @@ import React, { useEffect, useRef } from 'react';
 import Scrollbar from 'react-perfect-scrollbar';
 import { Outlet } from 'react-router-dom';
 import SidenavTheme from '../../MatxTheme/SidenavTheme/SidenavTheme';
-import Layout1Sidenav from './Layout1Sidenav';
+import Layout1Sidenav from './Layout1Sidenavfr';
 import Layout1Topbar from './Layout1Topbar';
 
 const Layout1Root = styled(Box)(({ theme }) => ({
