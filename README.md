@@ -8,24 +8,37 @@ Tuneflow is your digital gateway to a world of music. Discover, play, and immers
 
 <br>
 
-Prototyping Phase: 
+## Prototyping Phase: 
 <br>
 
 Homepage
+<br>
+
 ![TuneFlow Homepage](https://github.com/uOttawaSEGA2022/TuneFlow/assets/109557146/9cc9e583-2dd8-4948-ab76-cff99523457f)
 
 <br>
 Sign-Up Page
-![TuneFlow SignUp Page](https://github.com/uOttawaSEGA2022/TuneFlow/assets/109557146/0dad26ea-db19-4704-b450-e5e95eb4116b)
+<br>
+
+![TuneFlow SignUp Page](https://github.com/uOttawaSEGA2022/TuneFlow/assets/109557146/0dad26ea-db19-4704-b450-e5e95eb4116b) 
 
 <br>
 Tunes Shop (Client View)
+<br>
+
 ![TuneFlow Tunes Shop](https://github.com/uOttawaSEGA2022/TuneFlow/assets/109557146/b070c49d-2508-4234-b402-c5aabb87ad62)
 
 <br>
-Shopping Cart (Client View)
+Shopping Cart (Client View
+<br>
+
 ![TuneFlow Cart](https://github.com/uOttawaSEGA2022/TuneFlow/assets/109557146/d07f2622-13a6-4f71-b681-021222d9c815)
 
 <br>
 Tunes Manager (Uploading Tunes Feature - Artist View)
+<br>
+
 ![TuneFlow Upload](https://github.com/uOttawaSEGA2022/TuneFlow/assets/109557146/01545c2a-c659-4ce9-8746-7d3418b0a767)
+
+
+
