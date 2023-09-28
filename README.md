@@ -15,11 +15,12 @@ Tuneflow is your digital gateway to a world of music. Discover, play, and immers
 
 ### Features:
 
-- Dummy local database for handeling user authetication, login, & e-commerce system.
+- Dummy local database for handeling user authentication, login, & e-commerce system.
 - Upload music
 - Checkout system
 - Analytics dashboard
 
+<br>
 ## Our Software (Lab 8):
 
 **Login:**
@@ -34,6 +35,7 @@ Tuneflow is your digital gateway to a world of music. Discover, play, and immers
 **Purchase Music (Customer View):**
 <img width="1676" alt="Screenshot 2023-03-16 at 7 00 35 PM" src="https://user-images.githubusercontent.com/46465622/225771328-d1d7cf6c-6dc7-4869-80d4-3dcc5bb367f6.png">
 
+<br>
 ## Prototyping Phase (Lab 7): 
 <br>
 
