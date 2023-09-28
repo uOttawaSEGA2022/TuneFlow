@@ -8,6 +8,12 @@ Tuneflow is your digital gateway to a world of music. Discover, play, and immers
 
 <br>
 
+### Tech Stack
+
+![React](https://img.shields.io/badge/react-000000.svg?style=for-the-badge&logo=react&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=Vercel&logoColor=white)
+![Material UI](https://img.shields.io/badge/mui-000000?style=for-the-badge&logo=mui&logoColor=white)
+
 ## Prototyping Phase (Lab 7): 
 <br>
 
