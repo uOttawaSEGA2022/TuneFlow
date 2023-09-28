@@ -8,7 +8,7 @@ Tuneflow is your digital gateway to a world of music. Discover, play, and immers
 
 <br>
 
-## Prototyping Phase: 
+## Prototyping Phase (Lab 7): 
 <br>
 
 Homepage
