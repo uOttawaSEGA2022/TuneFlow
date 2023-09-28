@@ -21,7 +21,10 @@ Tuneflow is your digital gateway to a world of music. Discover, play, and immers
 - Analytics dashboard
 
 <br>
+
 ## Our Software (Lab 8):
+
+<br>
 
 **Login:**
 <img width="1674" alt="Screenshot 2023-03-16 at 6 57 21 PM" src="https://user-images.githubusercontent.com/46465622/225771307-eb0a34cc-5a05-4be0-b425-2b17c5b6b113.png">
